@@ -27,7 +27,6 @@ open class WebFragment : TurboWebFragment(), NavDestination {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        toolbarForNavigation()?.inflateMenu(R.menu.web)
         viewLifecycleOwner.lifecycle.addObserver(bridgeDelegate)
     }
 
